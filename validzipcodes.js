@@ -4109,5 +4109,11 @@ function validZipCode(zipCode){
 	"30683","30293","30188","30189","30582","30295"];
 
 	zipCodeIndex = zipCodes.indexOf(zipCode);
-	return zipCodeIndex;
+	
+	if(zipCodeIndex == -1){
+		return false;
+	}
+	else{
+		return true;
+	}
 }
