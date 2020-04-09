@@ -8254,6 +8254,7 @@ function validZipCode(postalCode, country){
 			var postalCodeIndex = 0;
 			var postalCodeNameList = [''];
 			break;
+	}
 		
 	if(postalCodeIndex == -1){
 		var myArray = new Array(2);
