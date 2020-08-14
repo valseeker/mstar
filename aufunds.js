@@ -1,6 +1,9 @@
 function tickersToFundNames(ticker, region){
 
 	var data = {
+         "#CASH": {
+            "Description": "Cash or cash equivalents"
+         },
         "#ASX300": {
            "Description": "S&P/ASX 300 Index"
         },
@@ -28,7 +31,7 @@ function tickersToFundNames(ticker, region){
         "#DevREIT": {
            "Description": "S&P Developed REIT Index"
         },
-        "#AusBondBankBill OR Cash": {
+        "#AusBondBankBill": {
            "Description": "Bloomberg AusBond Bank Bill Index"
         },
         "#AusBondComposite": {
