@@ -6,25 +6,25 @@ function tickersToFundNames(ticker, region) {
     "#ASX300": {
       Description: "S&P/ASX 300 Index",
     },
-    "#ASXSmallOrds": {
+    "#ASXSMALLORDS": {
       Description: "S&P/ASX Small Ordinaries Index",
     },
-    "#AusBondBankBill": {
+    "#AUSBONDBANKBILL OR CASH": {
       Description: "Bloomberg AusBond Bank Bill Index",
     },
-    "#AusBondComposite": {
+    "#AUSBONDCOMPOSITE": {
       Description: "Bloomberg AusBond Composite 0+ Index",
     },
-    "#BarGlbAgg": {
+    "#BARGLBAGG": {
       Description: "Bloomberg Barclays Global Aggregate Bond Index",
     },
-    "#BarGlbAggCredit": {
+    "#BARGLBAGGCREDIT": {
       Description: "Bloomberg Barclays Global Aggregate Credit Bond Index",
     },
     "#CASH": {
       Description: "Cash or cash equivalents",
     },
-    "#DevREIT": {
+    "#DEVREIT": {
       Description: "S&P Developed REIT Index",
     },
     "#FTSEWGBI1-5": {
@@ -33,13 +33,13 @@ function tickersToFundNames(ticker, region) {
     "#MSCIEM": {
       Description: "MSCI Emerging Markets",
     },
-    "#MSCIWorld": {
+    "#MSCIWORLD": {
       Description: "MSCI World Index",
     },
-    "#MSCIWorldAUDHgd": {
+    "#MSCIWORLDAUDHGD": {
       Description: "MSCI World Index hedged to AUD",
     },
-    "#MSCIWorldNZDHgd": {
+    "#MSCIWORLDNZDHGD": {
       Description: "MSCI World Index hedged to NZD",
     },
     "#NZX50": {
@@ -10579,7 +10579,9 @@ function tickersToFundNames(ticker, region) {
       Description: "Zurich Investments Small Companies D",
     },
   };
-  var match = ticker in data ? data[ticker].Description : null;
+
+  var upperTicker = ticker.toUpperCase();
+  var match = upperTicker in data ? data[upperTicker].Description : null;
 
   return match;
 }
