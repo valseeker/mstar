@@ -9,7 +9,7 @@ function tickersToFundNames(ticker, region) {
     "#ASXSMALLORDS": {
       Description: "S&P/ASX Small Ordinaries Index",
     },
-    "#AUSBONDBANKBILL OR CASH": {
+    "#AUSBONDBANKBILL": {
       Description: "Bloomberg AusBond Bank Bill Index",
     },
     "#AUSBONDCOMPOSITE": {
